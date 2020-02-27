@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTitle"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/A"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvA1"
+        app:layout_constraintEnd_toStartOf="@id/tvB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/B"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvB1"
+        app:layout_constraintEnd_toStartOf="@+id/tvAB"
+        app:layout_constraintStart_toEndOf="@+id/tvA"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvAB"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="@string/AB"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ptAB1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvB"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/T"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvA2"
+        app:layout_constraintEnd_toStartOf="@id/tvB1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvA" />
+
+    <TextView
+        android:id="@+id/tvA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/T"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/tvA1"
+        app:layout_constraintBottom_toTopOf="@+id/tvA3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvB2"/>
+
+    <TextView
+        android:id="@+id/tvA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/F"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/tvA2"
+        app:layout_constraintBottom_toTopOf="@+id/tvA4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvB3"
+        />
+
+    <TextView
+        android:id="@+id/tvA4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/F"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/tvA3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvB4"/>
+
+    <TextView
+        android:id="@+id/tvB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/T"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvB2"
+        app:layout_constraintTop_toBottomOf="@+id/tvB"
+        app:layout_constraintStart_toEndOf="@id/tvA1"
+        app:layout_constraintEnd_toStartOf="@id/ptAB1"
+        />
+
+    <TextView
+        android:id="@+id/tvB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/F"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvB3"
+        app:layout_constraintEnd_toStartOf="@id/ptAB2"
+        app:layout_constraintStart_toEndOf="@id/tvA2"
+        app:layout_constraintTop_toBottomOf="@+id/tvB1" />
+
+    <TextView
+        android:id="@+id/tvB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/T"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvB4"
+        app:layout_constraintTop_toBottomOf="@+id/tvB2"
+        app:layout_constraintStart_toEndOf="@id/tvA3"
+        app:layout_constraintEnd_toStartOf="@id/ptAB3"
+        />
+
+    <TextView
+        android:id="@+id/tvB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/F"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvB3"
+        app:layout_constraintStart_toEndOf="@id/tvA4"
+        app:layout_constraintEnd_toStartOf="@id/ptAB4"
+         />
+
+    <EditText
+        android:id="@+id/ptAB1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/ptAB2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvB1"
+        app:layout_constraintTop_toBottomOf="@id/tvAB" />
+
+    <EditText
+        android:id="@+id/ptAB2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/ptAB3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvB2"
+        app:layout_constraintTop_toBottomOf="@id/ptAB1" />
+
+    <EditText
+        android:id="@+id/ptAB3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/ptAB4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvB3"
+        app:layout_constraintTop_toBottomOf="@id/ptAB2" />
+
+    <EditText
+        android:id="@+id/ptAB4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvB4"
+        app:layout_constraintTop_toBottomOf="@+id/ptAB3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
