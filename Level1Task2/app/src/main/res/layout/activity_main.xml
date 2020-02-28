@@ -93,12 +93,13 @@
         android:id="@+id/tvA4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:text="@string/F"
         android:textSize="35sp"
-        app:layout_constraintTop_toBottomOf="@id/tvA3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvB4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvB4"/>
+        app:layout_constraintTop_toBottomOf="@id/tvA3" />
 
     <TextView
         android:id="@+id/tvB1"
@@ -139,13 +140,13 @@
         android:id="@+id/tvB4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:text="@string/F"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvB3"
-        app:layout_constraintStart_toEndOf="@id/tvA4"
         app:layout_constraintEnd_toStartOf="@id/ptAB4"
-         />
+        app:layout_constraintStart_toEndOf="@id/tvA4"
+        app:layout_constraintTop_toBottomOf="@+id/tvB3" />
 
     <EditText
         android:id="@+id/ptAB1"
@@ -154,7 +155,8 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="35sp"
+        android:textSize="25sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/ptAB2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvB1"
@@ -167,7 +169,8 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="35sp"
+        android:textSize="25sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/ptAB3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvB2"
@@ -179,7 +182,8 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="35sp"
+        android:textSize="25sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/ptAB4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvB3"
@@ -189,11 +193,23 @@
         android:id="@+id/ptAB4"
         android:layout_width="120dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="35sp"
+        android:textSize="25sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvB4"
         app:layout_constraintTop_toBottomOf="@+id/ptAB3" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="105dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
